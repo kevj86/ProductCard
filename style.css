@@ -1,0 +1,118 @@
+:root {
+    /* Colours */
+    --clr-darkcyan: hsl(158, 36%, 37%);
+    --clr-cream: hsl(30, 38%, 92%);
+    --clr-darkblue: hsl(212, 21%, 14%);
+    --clr-greyblue: hsl(228, 12%, 48%);
+    --clr-white: hsl(0, 0%, 100%);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--clr-cream);
+}
+
+.container {
+    width: 1440px;
+    margin: auto;
+    background-color: var(--clr-cream);
+    display:flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 150px;
+    background-color: var(--clr-white);
+    border-radius: 10px;
+}
+
+.info {
+    width: 300px;
+    padding: 1.5rem;
+}
+
+.info p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: var(--clr-greyblue);
+    padding-top: 1.5rem;
+}
+
+.info h5 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--clr-greyblue);
+}
+
+.info h1 {
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 700;
+    padding-top: 1.5rem;
+}
+
+.image{
+    height: 450px;
+    width: 300px;
+    background: url('./images/image-product-desktop.jpg') no-repeat center center/cover;
+    border-radius: 10px 0 0 10px;
+}
+
+.price{
+    color: var(--clr-darkcyan);
+    font-size: 2rem;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: bold;
+    padding: 1.5rem 0;
+
+    display: flex;
+    align-items: center;
+
+}
+
+.price span {
+    color: var(--clr-greyblue);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    text-decoration: line-through;
+    padding-left: 1rem;
+    
+}
+
+.button {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--clr-darkcyan);
+    justify-content: center;
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    border-radius: 10px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.button img {
+    height: 100%;
+    padding-right: 1rem;
+}
+
+.button div {
+    color: var(--clr-white);
+}
+
+
+
+.attribution { 
+    font-size: 11px; text-align: center; 
+    padding-top: 2rem;
+}
+
+.attribution a { color: hsl(228, 45%, 44%); }
